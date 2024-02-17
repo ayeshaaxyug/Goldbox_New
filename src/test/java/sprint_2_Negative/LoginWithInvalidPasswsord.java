@@ -16,7 +16,7 @@ public class LoginWithInvalidPasswsord {
 	
 	@Test
 	
-	public void LoginWithInvalidPasswsord()throws Exception 
+	public void loginWithInvalidPasswsord()throws Exception 
 	{
 		
 		WebDriverManager.chromedriver().setup();
@@ -24,13 +24,13 @@ public class LoginWithInvalidPasswsord {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
         Thread.sleep(9000);
-        driver.findElement(By.xpath("http://stg-fms-goldbox.goldsikka.com/signin"));
+        driver.get("http://stg-fms-goldbox.goldsikka.com");
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address")).sendKeys("Soumyaa@gmail.com",Keys.ENTER);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("Soumyaa@gmail.com",Keys.ENTER);
         Thread.sleep(3000);
         driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@123",Keys.ENTER);
         Thread.sleep(3000);
-        w.takeScreenShot(driver, "LoginWithInvalidUserID");
+        w.takeScreenShot(driver, "loginWithInvalidPasswsord");
         Thread.sleep(3000);
         driver.quit();
 		

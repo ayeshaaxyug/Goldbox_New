@@ -34,35 +34,19 @@ public class InsepectBootstrapButtonOff {
         Thread.sleep(8000);
         driver.findElement(By.xpath(" //span[.='Schemes']")).click();
         Thread.sleep(2000);
-        WebElement AllSchemes = driver.findElement(By.xpath("//a[.='Scheme List']"));
-        String allSchemes = AllSchemes.getText();
-        
-        WebElement MyScheme = driver.findElement(By.xpath("//td[.='GGOOLLDD']"));
-        String myScheme = MyScheme.getText();
-        
+        driver.findElement(By.xpath("//a[.='Scheme List']"));
         Thread.sleep(2000);
         
-        for(;;)
-        {
-        	try 
-            {
-    			if(allSchemes.contains(myScheme))
-    			{
-    				break;
-    			}
-    		} 
-            catch (Exception e) 
-            {
-    			
-    		}
-        }
-        
-        for (int i = 1; i <= 5; i++)
+        for (int i = 1; i <= 9; i++)
         {
         	 Thread.sleep(2000);
         	 driver.findElement(By.xpath("//a[text()=' Next ']")).click();
         	 Thread.sleep(2000);
 		}
+        
+        Thread.sleep(2000);
+        WebElement MyScheme = driver.findElement(By.xpath("//td[.='GGOOLLDD']"));
+        String myScheme = MyScheme.getText();
         Thread.sleep(2000);
         driver.findElement(By.xpath("(//td[.='GGOOLLDD']/..//td[.='MY GOLD']/..//button[.=' View ']/../..//td//button[.=' Info '])[3]/..//button[.=' Edit ']/..//div/button//div[@class='mdc-switch__icons']")).click();
         Thread.sleep(2000);

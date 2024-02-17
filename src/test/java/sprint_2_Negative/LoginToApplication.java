@@ -16,20 +16,22 @@ public class LoginToApplication {
 	
 	@Test
 	
-	public void LoginToApplication() throws Exception
+	public void loginToApplication() throws Exception
 	{
 		WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
         Thread.sleep(9000);
-        driver.findElement(By.xpath("http://stg-fms-goldbox.goldsikka.com/signin"));
+        driver.get("http://stg-fms-goldbox.goldsikka.com");
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address")).sendKeys("soumyaa@gmail.com",Keys.ENTER);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumyaa@gmail.com",Keys.ENTER);
         Thread.sleep(3000);
         driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2023",Keys.ENTER);
         Thread.sleep(3000);
-        w.takeScreenShot(driver, "LoginToApplication");
+        driver.findElement(By.xpath("//button[.=' Sign In ']")).click();
+        Thread.sleep(3000);
+        w.takeScreenShot(driver, "loginToApplication");
         Thread.sleep(3000);
         driver.quit();
 	}

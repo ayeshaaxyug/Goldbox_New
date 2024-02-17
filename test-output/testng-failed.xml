@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sprint_2_Negative.PaymentPageRazorPayPass">
+      <class name="sprint_2_Negative.InsepectBootstrapButtonOff">
         <methods>
-          <include name="paymentPageRazorPayPass"/>
+          <include name="userPannel"/>
         </methods>
-      </class> <!-- sprint_2_Negative.PaymentPageRazorPayPass -->
+      </class> <!-- sprint_2_Negative.InsepectBootstrapButtonOff -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

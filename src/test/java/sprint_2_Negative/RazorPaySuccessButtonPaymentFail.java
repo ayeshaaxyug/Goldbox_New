@@ -103,6 +103,7 @@ public class RazorPaySuccessButtonPaymentFail {
 			
 			Thread.sleep(2000);
 			
+			
 	        driver.findElement(By.xpath("//span[.='Contact Details']/ancestor::div[@class='contact-title-container svelte-1m451hi']/following-sibling::div/descendant::div[@class='elem elem-one-click-checkout  svelte-1lowomx']/following-sibling::div/input[@name='contact']")).sendKeys("6309631698");
 			
 			Thread.sleep(2000);
@@ -114,12 +115,12 @@ public class RazorPaySuccessButtonPaymentFail {
 			driver.findElement(By.xpath("(//h3[.='UPI, Cards & more']/..//button[@class='new-method has-tooltip false svelte-1d17g67'])[1]")).click();
 			
 			Thread.sleep(2000);
-			
+			//(//div[.='Pay with UPI ID/ Mobile Number'])[1]/..//label[.='Enter UPI ID/ Mobile Number']
 			driver.findElement(By.xpath("(//div[.='Pay with UPI ID/ Mobile Number'])[1]/..//label[@class='svelte-1cfdp3q']")).click();
 			
-			Thread.sleep(2000);
+			Thread.sleep(2000);//div[.='Pay with UPI ID/ Mobile Number']/../following-sibling::div//label[.='Enter UPI ID/ Mobile Number']
 			
-			driver.findElement(By.xpath("(//div[.='Pay with UPI ID/ Mobile Number'])[1]/..//label[.='Enter UPI ID/ Mobile Number']")).sendKeys("6309631698");
+			driver.findElement(By.xpath("//div[.='Pay with UPI ID/ Mobile Number']/../following-sibling::div//label[.='Enter UPI ID/ Mobile Number']")).sendKeys("6309631698");
 			
 			Thread.sleep(2000);
 			

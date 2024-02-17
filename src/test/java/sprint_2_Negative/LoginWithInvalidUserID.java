@@ -17,7 +17,7 @@ public class LoginWithInvalidUserID {
 		
 		@Test
 		
-		public void LoginWithInvalidUserID()throws Exception
+		public void loginWithInvalidUserID()throws Exception
 		{
 			
 			WebDriverManager.chromedriver().setup();
@@ -25,13 +25,13 @@ public class LoginWithInvalidUserID {
 	        driver.manage().window().maximize();
 	        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
 	        Thread.sleep(9000);
-	        driver.findElement(By.xpath("http://stg-fms-goldbox.goldsikka.com/signin"));
+	        driver.get("http://stg-fms-goldbox.goldsikka.com");
 	        Thread.sleep(3000);
-	        driver.findElement(By.xpath("//input[@placeholder='Enter your email address")).sendKeys("Soumyaa@gmail.com",Keys.ENTER);
+	        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("Soumyaa@gmail.com");
 	        Thread.sleep(3000);
 	        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2023",Keys.ENTER);
 	        Thread.sleep(3000);
-	        w.takeScreenShot(driver, "LoginWithInvalidUserID");
+	        w.takeScreenShot(driver, "loginWithInvalidUserID");
 	        Thread.sleep(3000);
 	        driver.quit();
 		}

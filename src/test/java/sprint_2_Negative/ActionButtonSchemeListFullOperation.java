@@ -10,13 +10,13 @@ import org.testng.annotations.Test;
 import genericUtility.WebDriverUtility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class SchemeListActionButtonFullOperation {
+public class ActionButtonSchemeListFullOperation {
 	
 	WebDriverUtility w = new WebDriverUtility();
 	
 	@Test
 	
-	public void schemeListActionButtonFullOperation()throws Exception
+	public void actionButtonSchemeListFullOperation()throws Exception
 	{
 		
 		WebDriverManager.chromedriver().setup();
@@ -33,6 +33,15 @@ public class SchemeListActionButtonFullOperation {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//a[.='Scheme List']")).click();
         Thread.sleep(3000);
+
+		 for (int i = 1; i <= 9; i++)
+	        {
+	        	 Thread.sleep(3000);
+	        	 driver.findElement(By.xpath("//a[text()=' Next ']")).click();
+	        	 Thread.sleep(3000);
+			}
+	        
+		Thread.sleep(3000);
         driver.findElement(By.xpath("(//td[.='GGOOLLDD']/..//td[.='MY GOLD']/..//button[.=' View ']/../..//td//button[.=' Info '])[3]")).click();
         Thread.sleep(3000);
         driver.findElement(By.xpath("//h4[.='Scheme Info']/../../following-sibling::div//textarea[@formcontrolname='content']")).sendKeys("Gold");
@@ -43,7 +52,7 @@ public class SchemeListActionButtonFullOperation {
 		Thread.sleep(3000);
 		WebElement SchemeListActionButtonFullOperation = driver.findElement(By.xpath("//h4[.='Scheme Info']/../../following-sibling::div//textarea[@formcontrolname='content']/../../../../following-sibling::div//button[.='Add']"));
 		Thread.sleep(3000);
-	    w.takeScreenShot(driver, "SchemeListActionButtonFullOperation");
+	    w.takeScreenShot(driver, "actionButtonSchemeListFullOperation");
 	    Thread.sleep(3000);
 		driver.quit();
 

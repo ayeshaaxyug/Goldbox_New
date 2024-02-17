@@ -19,7 +19,7 @@ public class NavigateToSchemePage {
 	
 	@Test
 	
-	public void schemeNavigation()throws Exception
+	public void navigateToSchemePage()throws Exception
 	{
 		
 		WebDriverManager.chromedriver().setup();
@@ -43,7 +43,7 @@ public class NavigateToSchemePage {
         
         if (AddSchemePage.isDisplayed()) 
         {
-        	w.takeScreenShot(driver,"schemeNavigation" );
+        	w.takeScreenShot(driver,"navigateToSchemePage" );
 			Thread.sleep(2000);
 			Assert.fail();
 			Thread.sleep(2000);

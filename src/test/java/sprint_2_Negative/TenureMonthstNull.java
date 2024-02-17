@@ -34,6 +34,15 @@ public class TenureMonthstNull {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//a[.='Scheme List']")).click();
         Thread.sleep(3000);
+        
+        for (int i = 1; i <= 9; i++)
+        {
+        	 Thread.sleep(3000);
+        	 driver.findElement(By.xpath("//a[text()=' Next ']")).click();
+        	 Thread.sleep(3000);
+		}
+        
+	    Thread.sleep(3000);
         driver.findElement(By.xpath("(//td[.='GGOOLLDD']/..//td[.='MY GOLD']/..//button[.=' View ']/../..//td//button[.=' Info '])[1]")).click();
         Thread.sleep(3000);
         driver.findElement(By.xpath("//h1[.='Manage Tenures']/../following-sibling::div//button[.='Add']")).click();
@@ -57,3 +66,4 @@ public class TenureMonthstNull {
 	}
 
 }
+

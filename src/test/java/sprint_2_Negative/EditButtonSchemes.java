@@ -41,12 +41,15 @@ public class EditButtonSchemes {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//a[.='Scheme List']")).click();
         Thread.sleep(3000);
-        for (int i = 1; i <= 4; i++)
-        {
-        	 Thread.sleep(3000);
-        	 driver.findElement(By.xpath("//a[text()=' Next ']")).click();
-        	 Thread.sleep(3000);
-		}
+
+		 for (int i = 1; i <= 10; i++)
+	        {
+	        	 Thread.sleep(3000);
+	        	 driver.findElement(By.xpath("//a[text()=' Next ']")).click();
+	        	 Thread.sleep(3000);
+			}
+	        
+		Thread.sleep(3000);
         Thread.sleep(3000);
         driver.findElement(By.xpath("(//td[.='GGOOLLDD']/..//td[.='MY GOLD']/..//button[.=' View ']/../..//td//button[.=' Info '])[3]/..//button[.=' Edit ']")).click();
         Thread.sleep(3000);
