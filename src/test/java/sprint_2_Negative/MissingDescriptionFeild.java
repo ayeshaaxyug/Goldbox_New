@@ -17,7 +17,7 @@ public class MissingDescriptionFeild {
 	
 	@Test
 	
-	public void descriptionFeild() throws Exception
+	public void descriptionFeildTest() throws Exception
 	{
 		
 		WebDriverManager.chromedriver().setup();

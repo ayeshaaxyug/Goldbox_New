@@ -22,7 +22,7 @@ public class RazorPayFailureButtonPaymentPass {
 	
 	@Test
 	
-	public void razorPayFailureButtonPaymentPass()throws Exception
+	public void razorPayFailureButtonPaymentPassTest()throws Exception
 	{
 		
 		WebDriverManager.chromedriver().setup();
@@ -130,5 +130,4 @@ public class RazorPayFailureButtonPaymentPass {
 		driver.quit();
 		
 	}
-
-}
+ }	

@@ -16,7 +16,7 @@ public class LoginWithInvalidPasswsord {
 	
 	@Test
 	
-	public void loginWithInvalidPasswsord()throws Exception 
+	public void loginWithInvalidPasswsordTest()throws Exception 
 	{
 		
 		WebDriverManager.chromedriver().setup();

@@ -18,7 +18,7 @@ public class MissedFeildsAreAddedInScheme {
 	
 	@Test
 	
-	public void addingScheme()throws Exception
+	public void addingSchemeTest()throws Exception
 	{
 		
 		WebDriverManager.chromedriver().setup();

@@ -2,6 +2,8 @@ package sprint_2_Negative;
 
 import java.time.Duration;
 
+import javax.sound.midi.Patch;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -22,9 +24,9 @@ public class RazorPaySuccessButtonPaymentFail {
 		
 		@Test
 		
-		public void razorPaySuccessButtonPaymentFail()throws Exception
+		public void razorPaySuccessButtonPaymentFailTest()throws Exception
 		{
-			
+		
 			WebDriverManager.chromedriver().setup();
 		    WebDriver driver = new ChromeDriver();
 		    driver.manage().window().maximize();
@@ -39,6 +41,7 @@ public class RazorPaySuccessButtonPaymentFail {
 		    Thread.sleep(2000);
 		    driver.findElement(By.xpath("//h4[.='GOLD PLUS PLAN']/..//button[.='Subscribe']")).click();
 		    Thread.sleep(2000);
+		    
 		    WebElement AmountDrpDwn = driver.findElement(By.xpath("//select[@formcontrolname='amount']"));
 
 	        // Create a Select object from the dropdown element
@@ -47,8 +50,24 @@ public class RazorPaySuccessButtonPaymentFail {
 	        // Select an option by visible text
 	        dropdown1.selectByVisibleText("1000");
 	        
-	        Thread.sleep(2000);
-	        
+            try 
+            {	
+		    	 WebElement ErrorMessage = driver.findElement(By.xpath("//div[@aria-label='Gold live Price Issue']"));
+		    	 
+		    	 if(ErrorMessage.isDisplayed())
+		    	 {
+		    		 w.takeScreenShot(driver, "razorPaySuccessButtonPaymentFailTest");
+		    		 Thread.sleep(2000);
+		    	 }
+		    	 driver.quit();
+		  
+            }
+		    catch(Exception e)
+		    {
+		        System.out.println("Live Prices Are Fetching Successfully");
+		    }
+	        /*
+	       
 	        WebElement AmountDrpDwn1 = driver.findElement(By.xpath("//select[@formcontrolname='amount']"));
 
 	        // Create a Select object from the dropdown element
@@ -57,6 +76,9 @@ public class RazorPaySuccessButtonPaymentFail {
 	        // Select an option by visible text
 	        dropdown01.selectByVisibleText("1000");
 	        
+	        */
+	        
+	        Thread.sleep(2000);
 	        
 	        WebElement MonthsDrpDwn = driver.findElement(By.xpath("//select[@formcontrolname='total_installments']"));
 
@@ -115,29 +137,22 @@ public class RazorPaySuccessButtonPaymentFail {
 			driver.findElement(By.xpath("(//h3[.='UPI, Cards & more']/..//button[@class='new-method has-tooltip false svelte-1d17g67'])[1]")).click();
 			
 			Thread.sleep(2000);
-			//(//div[.='Pay with UPI ID/ Mobile Number'])[1]/..//label[.='Enter UPI ID/ Mobile Number']
+			
 			driver.findElement(By.xpath("(//div[.='Pay with UPI ID/ Mobile Number'])[1]/..//label[@class='svelte-1cfdp3q']")).click();
 			
-			Thread.sleep(2000);//div[.='Pay with UPI ID/ Mobile Number']/../following-sibling::div//label[.='Enter UPI ID/ Mobile Number']
+			Thread.sleep(2000);
 			
-			driver.findElement(By.xpath("//div[.='Pay with UPI ID/ Mobile Number']/../following-sibling::div//label[.='Enter UPI ID/ Mobile Number']")).sendKeys("6309631698");
+			driver.findElement(By.xpath("//div[.='Pay with UPI ID/ Mobile Number']/../following-sibling::div//label[text()='Enter UPI ID/ Mobile Number']")).sendKeys("6309631698");
 			
 			Thread.sleep(2000);
 			
 	        driver.findElement(By.xpath("//button[.='Pay Now']")).click();
-			
-			Thread.sleep(2000);
+	        
+			Thread.sleep(2000);	
 			
 			driver.quit();
-
-			
-			
-			
-			
-			
 			
 			
 		}
 		
-
 }

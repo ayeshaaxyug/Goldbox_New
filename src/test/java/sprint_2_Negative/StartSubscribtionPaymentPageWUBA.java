@@ -22,7 +22,7 @@ public class StartSubscribtionPaymentPageWUBA {
 	
 	@Test
 	
-	public void startSubscribtionPaymentPageWUBA()throws Exception
+	public void startSubscribtionPaymentPageWUBATest()throws Exception
 	{
 		
 		WebDriverManager.chromedriver().setup();

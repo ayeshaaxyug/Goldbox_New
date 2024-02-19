@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="sprint_2_Negative.MissingAddCalculation"/>
+      <class name="sprint_2_Negative.ActionButtonSchemeListFullOperation"/>
+      <class name="sprint_2_Negative.StartSubscribitionPaymentPageUsingBookingAccount"/>
+      <class name="sprint_2_Negative.ActionButtonSchemeContentAddingSuccessfully"/>
+      <class name="sprint_2_Negative.SubscribeButtonStartSubscribition"/>
+      <class name="sprint_2_Negative.ActionButtonSchemeContentNull"/>
+      <class name="sprint_2_Negative.NavigateEcommerce"/>
+      <class name="sprint_2_Negative.TenureMonthstNull"/>
+      <class name="sprint_2_Negative.LoginWithInvalidUserID"/>
+      <class name="sprint_2_Negative.NavigateToDashboard"/>
+      <class name="sprint_2_Negative.MissingAddSchemeName"/>
+      <class name="sprint_2_Negative.NavigateToSchemePage"/>
+      <class name="sprint_2_Negative.LoginWithInvalidPasswsord"/>
+      <class name="sprint_2_Negative.RazorPayFailureButtonPaymentPass"/>
+      <class name="sprint_2_Negative.TenureAmountListNull"/>
+      <class name="sprint_2_Negative.StartSubscribtionPaymentPageWUBA"/>
+      <class name="sprint_2_Negative.MissedFeildsAreAddedInScheme"/>
+      <class name="sprint_2_Negative.NavigateToUsers"/>
+      <class name="sprint_2_Negative.TenureMonthsAddedSuccessfully"/>
+      <class name="sprint_2_Negative.ActionButtonSchemeFatureAddingSuccessfully"/>
+      <class name="sprint_2_Negative.ActionButtonSchemeFeatureNull"/>
+      <class name="sprint_2_Negative.EditButtonSchemes"/>
+      <class name="sprint_2_Negative.LoginToApplication"/>
+      <class name="sprint_2_Negative.MissingDescriptionFeild"/>
+      <class name="sprint_2_Negative.InsepectBootstrapButtonOff"/>
+      <class name="sprint_2_Negative.TenureAddingAmountSuccessfully"/>
+      <class name="sprint_2_Negative.RazorPaySuccessButtonPaymentFail"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

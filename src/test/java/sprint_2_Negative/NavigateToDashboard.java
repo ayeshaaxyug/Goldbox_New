@@ -16,7 +16,7 @@ public class NavigateToDashboard {
 	
 	@Test
 	
-	public void navigateToDashboard()throws Exception
+	public void navigateToDashboardTest()throws Exception
 	{
 		
 		WebDriverManager.chromedriver().setup();
@@ -44,22 +44,6 @@ public class NavigateToDashboard {
 		}
         
         driver.quit();
-        
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 	}
 

@@ -19,7 +19,7 @@ public class NavigateToSchemePage {
 	
 	@Test
 	
-	public void navigateToSchemePage()throws Exception
+	public void navigateToSchemePageTest()throws Exception
 	{
 		
 		WebDriverManager.chromedriver().setup();

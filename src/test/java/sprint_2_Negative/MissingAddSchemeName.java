@@ -18,7 +18,7 @@ public class MissingAddSchemeName {
 	
 	@Test
 	
-	public void addSchemeName() throws Exception
+	public void addSchemeNameTest() throws Exception
 	{
 		
 		WebDriverManager.chromedriver().setup();

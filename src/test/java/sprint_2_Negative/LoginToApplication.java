@@ -16,7 +16,7 @@ public class LoginToApplication {
 	
 	@Test
 	
-	public void loginToApplication() throws Exception
+	public void loginToApplicationTest() throws Exception
 	{
 		WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();

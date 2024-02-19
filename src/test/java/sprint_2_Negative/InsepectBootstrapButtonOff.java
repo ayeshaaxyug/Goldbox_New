@@ -17,7 +17,7 @@ public class InsepectBootstrapButtonOff {
 	WebDriverUtility w = new WebDriverUtility();
 	
 	@Test
-	public void insepectBootstrapButtonOff()throws Exception
+	public void insepectBootstrapButtonOffTest()throws Exception
 	{
 		WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
@@ -37,7 +37,7 @@ public class InsepectBootstrapButtonOff {
         driver.findElement(By.xpath("//a[.='Scheme List']"));
         Thread.sleep(2000);
         
-        for (int i = 1; i <= 9; i++)
+        for (int i = 1; i <= 12; i++)
         {
         	 Thread.sleep(2000);
         	 driver.findElement(By.xpath("//a[text()=' Next ']")).click();
@@ -59,7 +59,7 @@ public class InsepectBootstrapButtonOff {
 	}
 	
 	@Test
-    public void userPannel()throws Exception 
+    public void userPannelTest()throws Exception 
     {
 		WebDriverManager.chromedriver().setup();
 	    WebDriver driver = new ChromeDriver();

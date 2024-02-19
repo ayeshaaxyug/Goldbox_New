@@ -22,7 +22,7 @@ public class StartSubscribitionPaymentPageUsingBookingAccount {
 	
 	@Test
 	
-	public void startSubscribitionPaymentPage()throws Exception
+	public void startSubscribitionPaymentPageTest()throws Exception
 	{
 		WebDriverManager.chromedriver().setup();
 	    WebDriver driver = new ChromeDriver();

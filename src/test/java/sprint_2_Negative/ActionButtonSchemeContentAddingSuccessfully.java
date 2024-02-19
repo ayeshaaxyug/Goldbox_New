@@ -15,8 +15,7 @@ public class ActionButtonSchemeContentAddingSuccessfully {
 	WebDriverUtility w = new WebDriverUtility();
 	
 	@Test
-	
-	public void schemeContentAddingSuccessfully() throws Exception
+	public void schemeContentAddingSuccessfullyTest() throws Exception
 	{
 		
 		WebDriverManager.chromedriver().setup();
@@ -34,7 +33,7 @@ public class ActionButtonSchemeContentAddingSuccessfully {
         driver.findElement(By.xpath("//a[.='Scheme List']")).click();
         Thread.sleep(3000);
 
-		 for (int i = 1; i <= 9; i++)
+		 for (int i = 1; i <= 12; i++)
 	        {
 	        	 Thread.sleep(3000);
 	        	 driver.findElement(By.xpath("//a[text()=' Next ']")).click();

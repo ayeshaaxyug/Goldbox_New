@@ -24,7 +24,7 @@ public class EditButtonSchemes {
 	
 	@Test
 	
-	public void editButtonSchemes() throws Exception
+	public void editButtonSchemesTest() throws Exception
 	{
 		
 		WebDriverManager.chromedriver().setup();
@@ -42,7 +42,7 @@ public class EditButtonSchemes {
         driver.findElement(By.xpath("//a[.='Scheme List']")).click();
         Thread.sleep(3000);
 
-		 for (int i = 1; i <= 10; i++)
+		 for (int i = 1; i <= 12; i++)
 	        {
 	        	 Thread.sleep(3000);
 	        	 driver.findElement(By.xpath("//a[text()=' Next ']")).click();

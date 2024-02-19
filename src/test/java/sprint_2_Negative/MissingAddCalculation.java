@@ -18,7 +18,7 @@ public class MissingAddCalculation {
 	
 	@Test
 	
-	public void addCalculation()throws Exception
+	public void addCalculationTest()throws Exception
 	{
 		WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();

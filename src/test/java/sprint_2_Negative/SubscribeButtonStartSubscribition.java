@@ -20,7 +20,7 @@ public class SubscribeButtonStartSubscribition {
 	
 	@Test
 	
-	public void subscribeButtonStartSubscribition()throws Exception
+	public void subscribeButtonStartSubscribitionTest()throws Exception
 	{
 		
 		WebDriverManager.chromedriver().setup();

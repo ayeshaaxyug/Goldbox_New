@@ -15,7 +15,7 @@ public class NavigateEcommerce {
 	WebDriverUtility w = new WebDriverUtility();
 	
 	@Test
-	public void navigateEcommerce() throws Exception
+	public void navigateEcommerceTest() throws Exception
 	{
 		WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();

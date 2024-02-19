@@ -16,7 +16,7 @@ public class NavigateToUsers {
 	
 	@Test
 	
-	public void navigateToUsers()throws Exception
+	public void navigateToUsersTest()throws Exception
 	{
 		WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();

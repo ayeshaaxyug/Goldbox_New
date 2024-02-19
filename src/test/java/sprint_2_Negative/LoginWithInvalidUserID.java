@@ -17,7 +17,7 @@ public class LoginWithInvalidUserID {
 		
 		@Test
 		
-		public void loginWithInvalidUserID()throws Exception
+		public void loginWithInvalidUserIDTest()throws Exception
 		{
 			
 			WebDriverManager.chromedriver().setup();
