@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sprint_2_Negative.RazorPaySuccessButtonPaymentFail">
+      <class name="E_Commerce_FMS.E_CommerceProductInfo">
         <methods>
-          <include name="razorPaySuccessButtonPaymentFailTest"/>
+          <include name="eCommerceProductInfo"/>
         </methods>
-      </class> <!-- sprint_2_Negative.RazorPaySuccessButtonPaymentFail -->
+      </class> <!-- E_Commerce_FMS.E_CommerceProductInfo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
