@@ -8,11 +8,12 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class E_Commerce_Category {
+public class E_CommerceTransactions {
 	
 	@Test
 	
-	public void eCommerceCategory() throws Exception
+	public void eCommerceTransactions() throws Exception
+	
 	{
 		
 		WebDriverManager.chromedriver().setup();
@@ -27,10 +28,10 @@ public class E_Commerce_Category {
         Thread.sleep(9000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//a[.='Category']")).click();
+        driver.findElement(By.xpath("//a[.='Ecom-Transactions']")).click();
         Thread.sleep(3000);
         driver.quit();
-        
+		
 	}
 
 }

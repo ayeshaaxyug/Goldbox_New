@@ -21,7 +21,7 @@ public class E_CommerceProductInfo {
 	
     JavaUtility jUtil = new JavaUtility();
 	
-	String Necklace = "Necklace"+jUtil.getRandomNum();
+	String Bangles = "Bangles"+jUtil.getRandomNum();
 	
 	@Test 
 	
@@ -52,8 +52,6 @@ public class E_CommerceProductInfo {
 
         // Select an option by visible text
         CategoryNameDrpDwn.selectByVisibleText("Necklace");
-        
-        ///../following-sibling::div//select[@formcontrolname='subcategoryname
         
         Thread.sleep(3000);
         
@@ -129,7 +127,7 @@ public class E_CommerceProductInfo {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//button[.='Add']")).click();
         Thread.sleep(3000);
-        driver.quit();
+       
              
 	}
 	
