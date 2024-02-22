@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-21T15:37:37 IST" name="Default suite" finished-at="2024-02-21T15:38:57 IST" duration-ms="80636">
+  <suite started-at="2024-02-22T17:36:35 IST" name="Default suite" finished-at="2024-02-22T17:37:17 IST" duration-ms="41462">
     <groups>
     </groups>
-    <test started-at="2024-02-21T15:37:37 IST" name="Default test" finished-at="2024-02-21T15:38:57 IST" duration-ms="80636">
-      <class name="E_Commerce_FMS.E_CommerceOrders">
-        <test-method signature="eCommerceOrders()[pri:0, instance:E_Commerce_FMS.E_CommerceOrders@71ba6d4e]" started-at="2024-02-21T15:37:37 IST" name="eCommerceOrders" finished-at="2024-02-21T15:38:57 IST" duration-ms="80562" status="PASS">
+    <test started-at="2024-02-22T17:36:35 IST" name="Default test" finished-at="2024-02-22T17:37:17 IST" duration-ms="41462">
+      <class name="Banners_FMS.Banners_E_ComBanners">
+        <test-method signature="edit()[pri:0, instance:Banners_FMS.Banners_E_ComBanners@63376bed]" started-at="2024-02-22T17:36:35 IST" name="edit" finished-at="2024-02-22T17:37:17 IST" duration-ms="41396" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- eCommerceOrders -->
-      </class> <!-- E_Commerce_FMS.E_CommerceOrders -->
+        </test-method> <!-- edit -->
+      </class> <!-- Banners_FMS.Banners_E_ComBanners -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
