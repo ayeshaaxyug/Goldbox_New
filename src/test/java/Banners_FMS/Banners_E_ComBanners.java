@@ -38,6 +38,8 @@ public class Banners_E_ComBanners {
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Ecom Banners']")).click();
         Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@placeholder='Search...']")).sendKeys("chains",Keys.ENTER);
+        Thread.sleep(3000);
         driver.quit();
         
 		

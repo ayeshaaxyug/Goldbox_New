@@ -42,6 +42,8 @@ public class E_CommerceProductInfo {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
         Thread.sleep(3000);
+        driver.findElement(By.xpath("//input[@placeholder='Search...']")).sendKeys("chains",Keys.ENTER);
+        Thread.sleep(3000);
         driver.findElement(By.xpath("//button[.='Add Product']")).click();
         Thread.sleep(3000);
         

@@ -29,6 +29,8 @@ public class E_CommerceCategory {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//a[.='Category']")).click();
         Thread.sleep(3000);
+        driver.findElement(By.xpath("//input[@placeholder='Search...']")).sendKeys("chains",Keys.ENTER);
+        Thread.sleep(3000);
         driver.quit();
         
 	}

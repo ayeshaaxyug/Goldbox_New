@@ -42,6 +42,8 @@ JavaUtility jUtil = new JavaUtility();
         Thread.sleep(3000);
         driver.findElement(By.xpath("//a[.='Sub Category']")).click();
         Thread.sleep(3000);
+        driver.findElement(By.xpath("//input[@placeholder='Search...']")).sendKeys("chains",Keys.ENTER);
+        Thread.sleep(3000);
         driver.findElement(By.xpath("//button[.='Add SubCategory']")).click();
         Thread.sleep(3000);
         
@@ -126,7 +128,7 @@ JavaUtility jUtil = new JavaUtility();
         CategoryNameDrpDwn.selectByVisibleText("Rings");
         
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//h1[.='Update SubCategory']/../following-sibling::div//input[@placeholder='Enter SubCategory Name']")).sendKeys("RinggG");
+        driver.findElement(By.xpath("//h1[.='Update SubCategory']/../following-sibling::div//input[@placeholder='Enter SubCategory Name']")).sendKeys("RinggGG");
         Thread.sleep(3000);
         
         WebElement SelectTypeDrpDwnElement = driver.findElement(By.xpath("//h1[.='Update SubCategory']/../following-sibling::div//select[@class='enter-input ng-untouched ng-pristine ng-invalid']"));

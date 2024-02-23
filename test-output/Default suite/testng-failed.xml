@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Banners_FMS.Banners_E_ComBanners">
+      <class name="E_Commerce_FMS.E_CommerceOrders">
         <methods>
-          <include name="edit"/>
+          <include name="eCommerceOrders"/>
         </methods>
-      </class> <!-- Banners_FMS.Banners_E_ComBanners -->
+      </class> <!-- E_Commerce_FMS.E_CommerceOrders -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

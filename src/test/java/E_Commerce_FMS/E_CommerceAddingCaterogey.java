@@ -20,7 +20,7 @@ public class E_CommerceAddingCaterogey {
 	
 	JavaUtility jUtil = new JavaUtility();
 	
-	String Bangles = "Bangles"+jUtil.getRandomNum();
+	String chains = "chains"+jUtil.getRandomNum();
 	
 	@Test
 	public void eCommerceAddingCaterogey() throws Exception 
@@ -40,9 +40,11 @@ public class E_CommerceAddingCaterogey {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//a[.='Category']")).click();
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//button[.='Add Category']")).click();
+        driver.findElement(By.xpath("//input[@placeholder='Search...']")).sendKeys("chains",Keys.ENTER);
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//h1[.='Add Category']/../following-sibling::div//input[@placeholder='Enter Category Name']")).sendKeys(Bangles);
+        driver.findElement(By.xpath("//button[.='Add Category']")).click();
+        Thread.sleep(5000);
+        driver.findElement(By.xpath("//h1[.='Add Category']/../following-sibling::div//input[@placeholder='Enter Category Name']")).sendKeys(chains);
         Thread.sleep(3000);
         
         Robot r = new Robot();
@@ -95,9 +97,9 @@ public class E_CommerceAddingCaterogey {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//a[.='Category']")).click();
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//td[.='Bangles2216121']/..//td//img[@class='table-img']/../../td//button[.=' Edit ']")).click();
+        driver.findElement(By.xpath("//td[.='chains4427869']/..//td//img[@class='table-img']/../../td//button[.=' Edit ']")).click();
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//h1[.='Update Category']/../following-sibling::div//input[@placeholder='Enter Category Name']")).sendKeys("Bangglless");
+        driver.findElement(By.xpath("//h1[.='Update Category']/../following-sibling::div//input[@placeholder='Enter Category Name']")).sendKeys("Chhaaiinnss");
         Thread.sleep(3000);
         
         Robot r = new Robot();
@@ -147,7 +149,7 @@ public class E_CommerceAddingCaterogey {
 	        Thread.sleep(3000);
 	        driver.findElement(By.xpath("//a[.='Category']")).click();
 	        Thread.sleep(3000);
-	        driver.findElement(By.xpath("//td[.='Bangles2216121Bangglless']/../td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button[@class='mdc-switch mdc-switch--selected mdc-switch--checked']")).click();
+	        driver.findElement(By.xpath("//td[.='chains4427869Chhaaiinnss']/../td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button[@class='mdc-switch mdc-switch--selected mdc-switch--checked']")).click();
 	        Thread.sleep(3000);
 	        driver.quit();
 		  

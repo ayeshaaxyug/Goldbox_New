@@ -38,9 +38,11 @@ public class E_CommerceBrands {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//a[.='Brands']")).click();
         Thread.sleep(3000);
+        driver.findElement(By.xpath("//input[@placeholder='Search...']")).sendKeys("GOLDCOIN",Keys.ENTER);
+        Thread.sleep(3000);
         driver.findElement(By.xpath("//button[.='Add Brand']")).click();
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//h1[.='Add Brand']/../following-sibling::div//input[@placeholder='Enter Brand Name']")).sendKeys("GOLDCOIN");
+        driver.findElement(By.xpath("//h1[.='Add Brand']/../following-sibling::div//input[@placeholder='Enter Brand Name']")).sendKeys("GOLDCOINSS");
         Thread.sleep(3000);
         
         Robot r = new Robot();
@@ -91,9 +93,9 @@ public class E_CommerceBrands {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//a[.='Brands']")).click();
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//td[.='GOLDCOIN']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']")).click();
+        driver.findElement(By.xpath("//td[.='GOLDCOINSS']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']")).click();
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//h1[.='Update Brand']/../following-sibling::div//input[@placeholder='Enter Brand Name']")).sendKeys("GOLDMETAL");
+        driver.findElement(By.xpath("//h1[.='Update Brand']/../following-sibling::div//input[@placeholder='Enter Brand Name']")).sendKeys("GOLDMETALSS");
         Thread.sleep(3000);
         
         Robot r = new Robot();
@@ -145,7 +147,7 @@ public class E_CommerceBrands {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//a[.='Brands']")).click();
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//td[.='GOLDCOIN']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//div[@class='mdc-switch__icons']")).click();
+        driver.findElement(By.xpath("//td[.='GOLDCOINSGOLDMETALS']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//div[@class='mdc-switch__icons']")).click();
         Thread.sleep(3000);
         driver.quit();
         
@@ -173,7 +175,7 @@ public class E_CommerceBrands {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//a[.='Brands']")).click();
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//td[.='GOLDCOIN']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button[@class='btn-sm btn-edit bg-danger']")).click();
+        driver.findElement(By.xpath("//td[.='GOLDCOINS']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button[@class='btn-sm btn-edit bg-danger']")).click();
         Thread.sleep(3000);
         driver.quit();
 		
