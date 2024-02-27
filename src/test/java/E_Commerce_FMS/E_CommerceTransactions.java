@@ -30,6 +30,8 @@ public class E_CommerceTransactions {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//a[.='Ecom-Transactions']")).click();
         Thread.sleep(3000);
+        driver.findElement(By.xpath("//button[.='Export to Excel']")).click();
+        Thread.sleep(3000);
         driver.quit();
 		
 	}

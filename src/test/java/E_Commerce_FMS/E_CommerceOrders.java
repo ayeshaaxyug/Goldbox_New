@@ -56,7 +56,8 @@ public class E_CommerceOrders {
         
         Actions act = new Actions(driver);
         act.moveByOffset(200, 0).perform();
- //       act.moveToElement(WeightEle).perform();
+        
+        //act.moveToElement(WeightEle).perform();
         Thread.sleep(2000);
         
         Robot s = new Robot();
@@ -108,4 +109,5 @@ public class E_CommerceOrders {
         driver.quit();
        
 	}
-}
+	
+ }
