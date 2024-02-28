@@ -42,7 +42,7 @@ public class ActionButtonSchemeContentNull {
 			}
 	        
 		Thread.sleep(3000);
-        driver.findElement(By.xpath("(//td[.='GGOOLLDD']/..//td[.='MY GOLD']/..//button[.=' View ']/../..//td//button[.=' Info '])[3]")).click();
+        driver.findElement(By.xpath("(//td[.='G']/..//td[.='MY GOLD	']/..//button[.=' View ']/../..//td//button[.=' Info '])[3]")).click();
         Thread.sleep(3000);
         driver.findElement(By.xpath("//h4[.='Scheme Info']/../../following-sibling::div//textarea[@formcontrolname='content']"));
         Thread.sleep(3000);

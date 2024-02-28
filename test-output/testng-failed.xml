@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="E_Commerce_FMS.E_CommerceOrders">
+      <class name="sprint_2_Negative.ActionButtonSchemeTermsandConditiondAddingSuccessfully">
         <methods>
-          <include name="eCommerceOrders"/>
+          <include name="actionButtonSchemeTermsandConditiondAddingSuccessfully"/>
         </methods>
-      </class> <!-- E_Commerce_FMS.E_CommerceOrders -->
+      </class> <!-- sprint_2_Negative.ActionButtonSchemeTermsandConditiondAddingSuccessfully -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
