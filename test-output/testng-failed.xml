@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sprint_2_Negative.ActionButtonSchemeTermsandConditiondAddingSuccessfully">
+      <class name="Sprint_3_Negative.LoginInvalidCredentials">
         <methods>
-          <include name="actionButtonSchemeTermsandConditiondAddingSuccessfully"/>
+          <include name="addingCategoryByNullValues"/>
         </methods>
-      </class> <!-- sprint_2_Negative.ActionButtonSchemeTermsandConditiondAddingSuccessfully -->
+      </class> <!-- Sprint_3_Negative.LoginInvalidCredentials -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
