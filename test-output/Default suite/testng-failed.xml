@@ -5,7 +5,7 @@
     <classes>
       <class name="Sprint_3_Negative.LoginInvalidCredentials">
         <methods>
-          <include name="addingCategoryByNullValues"/>
+          <include name="categoriesBootStrapButton"/>
         </methods>
       </class> <!-- Sprint_3_Negative.LoginInvalidCredentials -->
     </classes>
