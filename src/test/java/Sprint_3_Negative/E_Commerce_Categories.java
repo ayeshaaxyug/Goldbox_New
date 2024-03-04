@@ -23,9 +23,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class E_Commerce_Categories {
    
-	//1TC
-	
 	WebDriverUtility w = new WebDriverUtility();
+	
+	//1TC
 	
 	@Test
 	

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Sprint_3_Negative.E_Commerce_Sub_Categories">
+      <class name="Sprint_3_Negative.E_Commerce_Products">
         <methods>
-          <include name="searchEditFeildSubCategory"/>
+          <include name="addingProductsByPassing6Values"/>
         </methods>
-      </class> <!-- Sprint_3_Negative.E_Commerce_Sub_Categories -->
+      </class> <!-- Sprint_3_Negative.E_Commerce_Products -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
