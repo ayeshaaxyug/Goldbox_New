@@ -1571,8 +1571,416 @@ public class E_Commerce_Products {
 	
 	//51TC
 	
+	@Test
 	
+	public void product_StonePage_Adding_StoneName() throws Exception
+	{
+		
+		WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+        Thread.sleep(2000);
+        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+        Thread.sleep(7000);
+        driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//a[.='Products']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("(//td[.='Choker']/..//td[.='Neck Choker']/..//td[.='Kp']/..//td//button[.=' Info ']/../following-sibling::td//button[.=' View '])[1]")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//button[.='Add Product Stone ']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//h1[.='Add Product Size']/../following-sibling::div//input[@formcontrolname='stonename']")).sendKeys("Diamond");
+        Thread.sleep(2000);
+        
+        WebElement AddingProductStone = driver.findElement(By.xpath("//h1[.='Add Product Size']/../following-sibling::div//button[.='Add']"));
+        Thread.sleep(2000);
+        
+        if (AddingProductStone.isDisplayed()) 
+        {
+			w.takeScreenShot(driver, "product_StonePage_Adding_StoneName");
+			Thread.sleep(2000);
+			driver.quit();
+			
+		}
+        else 
+        {
+            System.out.println("Added Successfully");
+		}
+   
+	     driver.quit();	
+		
+	}
 	
+	//52TC
+	
+	@Test
+	
+	public void product_StonePage_Adding_StoneColour()throws Exception
+	{
+		
+		WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+        Thread.sleep(2000);
+        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+        Thread.sleep(7000);
+        driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//a[.='Products']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("(//td[.='Choker']/..//td[.='Neck Choker']/..//td[.='Kp']/..//td//button[.=' Info ']/../following-sibling::td//button[.=' View '])[1]")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//button[.='Add Product Stone ']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//h1[.='Add Product Size']/../following-sibling::div//input[@formcontrolname='colour']")).sendKeys("White");
+        Thread.sleep(2000);
+        
+        WebElement AddingProductStone = driver.findElement(By.xpath("//h1[.='Add Product Size']/../following-sibling::div//button[.='Add']"));
+        Thread.sleep(2000);
+        
+        if (AddingProductStone.isDisplayed()) 
+        {
+			w.takeScreenShot(driver, "product_StonePage_Adding_StoneColour");
+			Thread.sleep(2000);
+			driver.quit();
+			
+		}
+        else 
+        {
+            System.out.println("Added Successfully");
+		}
+   
+	     driver.quit();
+		
+	}
+	
+	//53TC
+	
+	@Test
+	
+	public void product_StonePage_Adding_StonePrice() throws Exception
+	{
+		
+		WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+        Thread.sleep(2000);
+        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+        Thread.sleep(7000);
+        driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//a[.='Products']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("(//td[.='Choker']/..//td[.='Neck Choker']/..//td[.='Kp']/..//td//button[.=' Info ']/../following-sibling::td//button[.=' View '])[1]")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//button[.='Add Product Stone ']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//h1[.='Add Product Size']/../following-sibling::div//input[@formcontrolname='stoneprice']")).sendKeys("10000");
+        Thread.sleep(2000);
+        
+        WebElement AddingProductStone = driver.findElement(By.xpath("//h1[.='Add Product Size']/../following-sibling::div//button[.='Add']"));
+        Thread.sleep(2000);
+        
+        if (AddingProductStone.isDisplayed()) 
+        {
+			w.takeScreenShot(driver, "product_StonePage_Adding_StonePrice");
+			Thread.sleep(2000);
+			driver.quit();
+			
+		}
+        else 
+        {
+            System.out.println("Added Successfully");
+		}
+   
+	     driver.quit();
+	
+	}
+	
+	//54TC
+	
+	@Test
+	
+	public void product_StonePage_Adding_StoneDetails_Successfully() throws Exception
+	{
+		
+		WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+        Thread.sleep(2000);
+        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+        Thread.sleep(7000);
+        driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//a[.='Products']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("(//td[.='Choker']/..//td[.='Neck Choker']/..//td[.='Kp']/..//td//button[.=' Info ']/../following-sibling::td//button[.=' View '])[1]")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//button[.='Add Product Stone ']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//h1[.='Add Product Size']/../following-sibling::div//input[@formcontrolname='stonename']")).sendKeys("Diamond");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//h1[.='Add Product Size']/../following-sibling::div//input[@formcontrolname='colour']")).sendKeys("White");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//h1[.='Add Product Size']/../following-sibling::div//input[@formcontrolname='stoneprice']")).sendKeys("10000");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//h1[.='Add Product Size']/../following-sibling::div//input[@formcontrolname='noofstones']")).sendKeys("10");
+        Thread.sleep(2000);
+        
+        WebElement AddingProductStone = driver.findElement(By.xpath("//h1[.='Add Product Size']/../following-sibling::div//button[.='Add']"));
+        Thread.sleep(2000);
+        
+	    w.takeScreenShot(driver, "product_StonePage_Adding_StoneDetails_Successfully");
+	    Thread.sleep(2000);
+	    driver.quit();
+		
+	}
+	
+	//55TC
+	
+	@Test
+	
+	public void product_StonePage_Adding_StoneDetails_Clearing() throws Exception
+	{
+		
+		WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+        Thread.sleep(2000);
+        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+        Thread.sleep(7000);
+        driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//a[.='Products']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("(//td[.='Choker']/..//td[.='Neck Choker']/..//td[.='Kp']/..//td//button[.=' Info ']/../following-sibling::td//button[.=' View '])[1]")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//td[.='Diamond']/..//td[.='White']/..//td[.='₹1,000.00']/..//button[.=' Edit ']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//h1[.='Update Product Sizes']/../following-sibling::div//input[@formcontrolname='stonename']")).clear();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//h1[.='Update Product Sizes']/../following-sibling::div//input[@formcontrolname='colour']")).clear();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//h1[.='Update Product Sizes']/../following-sibling::div//input[@formcontrolname='stoneprice']")).clear();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//h1[.='Update Product Sizes']/../following-sibling::div//input[@formcontrolname='noofstones']")).clear();
+        Thread.sleep(2000);
+        
+        WebElement AddingProductStone = driver.findElement(By.xpath("//h1[.='Update Product Sizes']/../following-sibling::div//button[.='Update']"));
+        Thread.sleep(2000);
+        
+	    if (AddingProductStone.isDisplayed())
+	    {
+			w.takeScreenShot(driver, "product_StonePage_Adding_StoneDetails_Clearing");
+			Thread.sleep(2000);
+			driver.quit();
+		} 
+	    else 
+	    {
+            System.out.println("Stones Details are Not Cleared");
+		}
+	    
+	    driver.quit();
+	    
+	}
+	
+	//56TC
+	
+	@Test
+	
+	public void productPageActionButton_ClearingData3() throws Exception{
+		
+		WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+        Thread.sleep(2000);
+        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+        Thread.sleep(7000);
+        driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//a[.='Products']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//td[.='Choker']/..//td[.='Neck Choker']/..//td[.='Kp']/..//td//button[.=' Info ']/../following-sibling::td//button[.=' Edit ']")).click();
+        Thread.sleep(2000);
+        
+        WebElement UpdateProductsCategoryNameyDrpDwnElement = driver.findElement(By.xpath("//h1[.='Update Product Details']/../following-sibling::div//select[@formcontrolname='categoryname']"));
+
+        // Create a Select object from the dropdown element
+        Select UpdateProductsCategoryNameDrpDwn = new Select(UpdateProductsCategoryNameyDrpDwnElement);
+
+        // Select an option by visible text
+        UpdateProductsCategoryNameDrpDwn.selectByVisibleText("Select Category");
+        
+        Thread.sleep(2000);
+        
+        WebElement UpdateProductsSUbCategoryNameyDrpDwnElement = driver.findElement(By.xpath("//h1[.='Update Product Details']/../following-sibling::div//select[@formcontrolname='subcategoryname']"));
+
+        // Create a Select object from the dropdown element
+        Select UpdateProductsSubCategoryNameDrpDwn = new Select(UpdateProductsSUbCategoryNameyDrpDwnElement);
+
+        // Select an option by visible text
+        UpdateProductsSubCategoryNameDrpDwn.selectByVisibleText("Select SubCategory");
+        
+        Thread.sleep(2000);
+
+        WebElement UpdateProductsBrandNameyDrpDwnElement = driver.findElement(By.xpath("//h1[.='Update Product Details']/../following-sibling::div//select[@formcontrolname='brandname']"));
+
+        // Create a Select object from the dropdown element
+        Select UpdateProductsBrandNameDrpDwn = new Select(UpdateProductsBrandNameyDrpDwnElement);
+
+        // Select an option by visible text
+        UpdateProductsBrandNameDrpDwn.selectByVisibleText("Select Brand");
+        
+        Thread.sleep(2000);
+        WebElement UpdatingBtn = driver.findElement(By.xpath("//h1[.='Update Product Details']/../following-sibling::div//button[.='Update']"));
+        
+        if (UpdatingBtn.isDisplayed())
+	    {
+			w.takeScreenShot(driver, "productPageActionButton_ClearingData3");
+			Thread.sleep(2000);
+			driver.quit();
+		} 
+	    else 
+	    {
+            System.out.println("Updated Successfully");
+		}
+	    
+	    driver.quit();
+		
+	}
+	
+	//57TC
+	
+	@Test
+	
+	public void productPageActionButton_ClearingData6()throws Exception
+	{
+		
+		WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+        Thread.sleep(2000);
+        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+        Thread.sleep(7000);
+        driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//a[.='Products']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//td[.='Choker']/..//td[.='Neck Choker']/..//td[.='Kp']/..//td//button[.=' Info ']/../following-sibling::td//button[.=' Edit ']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//h1[.='Update Product Details']/../following-sibling::div//input[@formcontrolname='productname']")).clear();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//h1[.='Update Product Details']/../following-sibling::div//input[@formcontrolname='va']")).clear();
+        Thread.sleep(2000);
+        
+        WebElement UpdateProductsSelectCaratDrpDwnElement = driver.findElement(By.xpath("//h1[.='Update Product Details']/../following-sibling::div//select[@formcontrolname='carat']"));
+
+        // Create a Select object from the dropdown element
+        Select UpdateProductsSelectCaratDrpDwn = new Select(UpdateProductsSelectCaratDrpDwnElement);
+
+        // Select an option by visible text
+        UpdateProductsSelectCaratDrpDwn.selectByVisibleText("Select Carat");
+        
+        Thread.sleep(2000);
+        WebElement UpdatingBtn = driver.findElement(By.xpath("//h1[.='Update Product Details']/../following-sibling::div//button[.='Update']"));
+        
+        if (UpdatingBtn.isDisplayed())
+	    {
+			w.takeScreenShot(driver, "productPageActionButton_ClearingData6");
+			Thread.sleep(2000);
+			driver.quit();
+		} 
+	    else 
+	    {
+            System.out.println("Updated Successfully");
+		}
+	    
+	    driver.quit();
+           
+	}
+	
+	//58TC
+	
+	@Test
+	
+	public void productPageActionButton_ClearingData8() throws Exception
+	{
+		
+		WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+        Thread.sleep(2000);
+        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+        Thread.sleep(7000);
+        driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//a[.='Products']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//td[.='Choker']/..//td[.='Neck Choker']/..//td[.='Kp']/..//td//button[.=' Info ']/../following-sibling::td//button[.=' Edit ']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//h1[.='Update Product Details']/../following-sibling::div//input[@formcontrolname='price']")).clear();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//h1[.='Update Product Details']/../following-sibling::div//textarea[@formcontrolname='description']")).clear();
+        Thread.sleep(2000);
+        
+        Thread.sleep(2000);
+        WebElement UpdatingBtn = driver.findElement(By.xpath("//h1[.='Update Product Details']/../following-sibling::div//button[.='Update']"));
+        
+        if (UpdatingBtn.isDisplayed())
+	    {
+			w.takeScreenShot(driver, "productPageActionButton_ClearingData8");
+			Thread.sleep(2000);
+			driver.quit();
+		} 
+	    else 
+	    {
+            System.out.println("Updated Successfully");
+		}
+	    
+	    driver.quit();
+		
+	}
 	
 }
 
