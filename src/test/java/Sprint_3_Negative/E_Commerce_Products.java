@@ -1983,27 +1983,3 @@ public class E_Commerce_Products {
 	}
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
