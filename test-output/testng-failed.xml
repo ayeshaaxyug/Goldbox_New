@@ -5,7 +5,7 @@
     <classes>
       <class name="Sprint_3_Negative.E_Commerce_Products">
         <methods>
-          <include name="addingProductsByPassing6Values"/>
+          <include name="productsWeight_SizePageEditPage_BootStrapButton"/>
         </methods>
       </class> <!-- Sprint_3_Negative.E_Commerce_Products -->
     </classes>

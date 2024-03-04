@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="9" passed="1" failed="0" skipped="0">
+<testng-results ignored="22" total="23" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-04T13:03:30 IST" name="Default suite" finished-at="2024-03-04T13:05:03 IST" duration-ms="92418">
+  <suite started-at="2024-03-04T15:34:10 IST" name="Default suite" finished-at="2024-03-04T15:34:45 IST" duration-ms="34222">
     <groups>
     </groups>
-    <test started-at="2024-03-04T13:03:30 IST" name="Default test" finished-at="2024-03-04T13:05:03 IST" duration-ms="92418">
+    <test started-at="2024-03-04T15:34:10 IST" name="Default test" finished-at="2024-03-04T15:34:45 IST" duration-ms="34222">
       <class name="Sprint_3_Negative.E_Commerce_Products">
-        <test-method signature="addingProductsByPassing6Values()[pri:0, instance:Sprint_3_Negative.E_Commerce_Products@2ddc9a9f]" started-at="2024-03-04T13:03:30 IST" name="addingProductsByPassing6Values" finished-at="2024-03-04T13:05:03 IST" duration-ms="92363" status="PASS">
+        <test-method signature="product_StonePage_Adding_Null()[pri:0, instance:Sprint_3_Negative.E_Commerce_Products@11392934]" started-at="2024-03-04T15:34:10 IST" name="product_StonePage_Adding_Null" finished-at="2024-03-04T15:34:45 IST" duration-ms="34133" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addingProductsByPassing6Values -->
+        </test-method> <!-- product_StonePage_Adding_Null -->
       </class> <!-- Sprint_3_Negative.E_Commerce_Products -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
