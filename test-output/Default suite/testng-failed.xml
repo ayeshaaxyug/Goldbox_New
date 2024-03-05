@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Sprint_3_Negative.E_Commerce_Products">
+      <class name="Sprint_3_Negative.E_Commerce_Orders">
         <methods>
-          <include name="productsWeight_SizePageEditPage_BootStrapButton"/>
+          <include name="ordersStatusButton"/>
         </methods>
-      </class> <!-- Sprint_3_Negative.E_Commerce_Products -->
+      </class> <!-- Sprint_3_Negative.E_Commerce_Orders -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
