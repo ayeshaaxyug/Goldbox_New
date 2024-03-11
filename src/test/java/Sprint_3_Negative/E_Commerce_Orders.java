@@ -83,7 +83,7 @@ public class E_Commerce_Orders {
         Thread.sleep(7000);
 		
         WebElement SearchDateEdt = driver.findElement(By.xpath("//input[@placeholder='Search...']"));
-        SearchDateEdt.sendKeys("'9666441040");
+        SearchDateEdt.sendKeys("9666441040");
         
         if (SearchDateEdt.isDisplayed()) 
         {

@@ -41,7 +41,7 @@ public class E_CommerceProductInfo {
         driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
-        Thread.sleep(9000);
+        Thread.sleep(7000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
